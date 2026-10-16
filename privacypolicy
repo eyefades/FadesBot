@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for FadesBot, including the information it processes, where it is stored, and how to request its deletion.">
+  <meta name="theme-color" content="#f4f7f3">
+  <title>Privacy Policy | FadesBot</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f7f3;
+      --surface: #ffffff;
+      --ink: #1b2925;
+      --muted: #52635d;
+      --line: #d8e1dc;
+      --green: #185b48;
+      --green-soft: #e4f0e9;
+      --copper: #a44d32;
+      --gold: #8a6417;
+      --measure: 72rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(90deg, transparent 0, transparent calc(50% - 1px), rgba(24, 91, 72, .035) 50%, transparent calc(50% + 1px)),
+        var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--green); text-underline-offset: 3px; }
+    a:hover { color: var(--copper); }
+    a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .skip-link {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      z-index: 2;
+      padding: 10px 14px;
+      transform: translateY(-150%);
+      background: var(--ink);
+      color: white;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .masthead {
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .84);
+    }
+
+    .masthead-inner,
+    .layout,
+    .footer-inner {
+      width: min(var(--measure), calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .masthead-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font-family: Georgia, serif;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .masthead-label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: clamp(36px, 7vw, 96px);
+      align-items: start;
+      padding-block: 62px 88px;
+    }
+
+    .contents {
+      position: sticky;
+      top: 24px;
+      padding-top: 8px;
+    }
+
+    .contents-title,
+    .eyebrow,
+    .section-kicker {
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    .contents-title { margin: 0 0 14px; }
+
+    .contents ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-left: 1px solid var(--line);
+    }
+
+    .contents li { margin: 0; }
+
+    .contents a {
+      display: block;
+      padding: 6px 0 6px 14px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.45;
+      text-decoration: none;
+    }
+
+    .contents a:hover { color: var(--green); }
+
+    main { min-width: 0; }
+
+    .eyebrow { margin: 0 0 14px; }
+
+    h1,
+    h2,
+    h3,
+    p { margin-top: 0; }
+
+    h1 {
+      max-width: 13ch;
+      margin-bottom: 18px;
+      font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    .lede {
+      max-width: 62ch;
+      margin-bottom: 24px;
+      color: var(--muted);
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .updated {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .updated::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      content: "";
+    }
+
+    .notice {
+      margin: 0 0 42px;
+      padding: 18px 20px;
+      border-left: 3px solid var(--copper);
+      background: #fffaf5;
+      color: #54392f;
+    }
+
+    .notice strong { color: #3a2922; }
+
+    section {
+      padding-block: 30px;
+      border-top: 1px solid var(--line);
+      scroll-margin-top: 22px;
+    }
+
+    .section-kicker { margin-bottom: 7px; }
+
+    h2 {
+      margin-bottom: 16px;
+      font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin-bottom: 5px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p, li { max-width: 72ch; }
+    p { margin-bottom: 14px; }
+    ul { padding-left: 22px; }
+    li { margin-bottom: 8px; padding-left: 3px; }
+
+    .data-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px 32px;
+      margin: 22px 0 0;
+    }
+
+    .data-list > div { padding-top: 13px; border-top: 2px solid var(--green-soft); }
+    .data-list p { margin-bottom: 0; color: var(--muted); font-size: 14px; }
+
+    .contact-line {
+      padding: 16px 18px;
+      background: var(--green-soft);
+    }
+
+    .contact-line p { margin: 0; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      background: #eaf0eb;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding-block: 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-inner p { margin: 0; }
+
+    @media (max-width: 760px) {
+      .masthead-inner,
+      .layout,
+      .footer-inner { width: min(100% - 36px, 620px); }
+
+      .masthead-inner { min-height: 66px; }
+      .masthead-label { font-size: 12px; }
+
+      .layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-block: 38px 64px;
+      }
+
+      .contents { position: static; }
+      .contents ol { display: flex; flex-wrap: wrap; gap: 4px 14px; border: 0; }
+      .contents a { padding: 4px 0; }
+      h1 { font-size: 40px; }
+      .lede { font-size: 17px; }
+    }
+
+    @media (max-width: 480px) {
+      .masthead-inner,
+      .layout,
+      .footer-inner { width: min(100% - 28px, 620px); }
+
+      .masthead-label { max-width: 132px; text-align: right; }
+      h1 { font-size: 36px; }
+      .data-list { grid-template-columns: 1fr; gap: 16px; }
+      .footer-inner { flex-direction: column; gap: 8px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#policy">Skip to privacy policy</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="wordmark" href="#top" aria-label="FadesBot privacy policy home">
+        <span class="mark" aria-hidden="true">F</span>
+        <span>FadesBot</span>
+      </a>
+      <span class="masthead-label">Data practices and privacy</span>
+    </div>
+  </header>
+
+  <div class="layout" id="top">
+    <nav class="contents" aria-label="Policy contents">
+      <p class="contents-title">On this page</p>
+      <ol>
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#data">Data processed</a></li>
+        <li><a href="#use">How data is used</a></li>
+        <li><a href="#sharing">Sharing</a></li>
+        <li><a href="#retention">Retention</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <main id="policy">
+      <p class="eyebrow">FadesBot / Privacy</p>
+      <h1>Your data, clearly explained.</h1>
+      <p class="lede">This policy describes the information FadesBot processes when it is installed in a Discord server, why it is used, where it may be stored or shared, and how to request access or deletion.</p>
+      <p class="updated">Effective October 16, 2026</p>
+
+      <aside class="notice" aria-label="Important information">
+        <strong>Server-specific settings matter.</strong> Server administrators choose which FadesBot features to enable and which channels to monitor. The bot operator hosts the bot and its database; server administrators can also control messages and records posted in their own Discord channels.
+      </aside>
+
+      <section id="scope">
+        <p class="section-kicker">01 / Scope</p>
+        <h2>Who this policy covers</h2>
+        <p>FadesBot is a self-hosted Discord bot that provides moderation, media-audit, profile, role, and utility features. This policy covers information FadesBot's operator processes through the bot. Discord separately processes account and platform data under its own <a href="https://discord.com/privacy" rel="noreferrer">Privacy Policy</a>.</p>
+        <p>Server owners and administrators configure the bot for their communities. They control their server settings, moderation practices, and the Discord channels where bot logs are sent. This policy does not cover data those administrators independently keep outside FadesBot.</p>
+      </section>
+
+      <section id="data">
+        <p class="section-kicker">02 / Information</p>
+        <h2>Data the bot processes</h2>
+        <p>FadesBot processes information only when needed for a feature that is enabled or used. Depending on the server and feature, this can include:</p>
+        <div class="data-list">
+          <div>
+            <h3>Discord identifiers and settings</h3>
+            <p>User, server, channel, role, and message IDs; usernames or display names available through Discord; role assignments; and administrator-configured moderation rules and feature settings.</p>
+          </div>
+          <div>
+            <h3>Messages and moderation events</h3>
+            <p>New messages are inspected for configured moderation, link, GIF, video, and sticky-message features. Filtered terms or blocked-link excerpts may appear in infraction reasons. Violations may be sent to configured Discord log channels. A bounded in-memory cache can hold up to 10 recently deleted messages per channel for the snipe feature; it is lost on restart or as newer deletions replace entries.</p>
+          </div>
+          <div>
+            <h3>Profiles and community features</h3>
+            <p>When profile features are used, the database can hold a user's profile text, background image URL, appearance settings, points, tokens, progression, badges, and cosmetic inventory, associated with Discord user and server IDs.</p>
+          </div>
+          <div>
+            <h3>Moderation and media audit records</h3>
+            <p>Infraction type, reason, timestamps, and user, moderator, server, and channel IDs. In channels configured for media-deletion auditing, records can include attachment URLs, message IDs, author and moderator IDs, and up to 500 characters of message text in a Discord log.</p>
+          </div>
+          <div>
+            <h3>Administrator action and diagnostic logs</h3>
+            <p>GIF blacklist management can log the moderator ID, affected URL, action, and timestamp. Local diagnostic logs may contain technical error details, such as service URLs or submitted usernames, when a request fails.</p>
+          </div>
+          <div>
+            <h3>Feature inputs</h3>
+            <p>For example, Twitch usernames submitted to followage commands, GIF search terms sent to Klipy, user-submitted profile details, and attachments processed by the media-audit feature.</p>
+          </div>
+          <div>
+            <h3>Temporary processing data</h3>
+            <p>Media and video files may be downloaded temporarily to inspect or archive them. Temporary files are removed by the processing code after the operation completes. Message recovery data is held in memory, not as a persistent message-history table.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="use">
+        <p class="section-kicker">03 / Purpose</p>
+        <h2>How information is used</h2>
+        <ul>
+          <li>Apply server-configured chat, domain, hyperlink, and GIF-link moderation.</li>
+          <li>Check configured video attachments against channel duration limits.</li>
+          <li>Maintain moderation history, media-audit records, and administrator-facing logs.</li>
+          <li>Provide profile cards, badges, points, tokens, role buttons, and other community features.</li>
+          <li>Provide Twitch followage lookups and GIF search when requested.</li>
+          <li>Operate, secure, troubleshoot, and maintain the bot.</li>
+        </ul>
+        <p>FadesBot does not sell personal data, use message content for advertising, or use message content to train AI or machine-learning models.</p>
+      </section>
+
+      <section id="sharing">
+        <p class="section-kicker">04 / Disclosure</p>
+        <h2>Where information may go</h2>
+        <ul>
+          <li><strong>Discord:</strong> Bot commands and features use Discord's services. Moderation and media-audit details may be posted in channels selected by the server administrators, where people with access to those channels can see them.</li>
+          <li><strong>Imgur:</strong> When media auditing is enabled for a channel, deleted attachments may be uploaded to Imgur for archival. The bot stores the resulting link in its local database and may post it in a configured Discord log channel.</li>
+          <li><strong>Klipy:</strong> A GIF search term is sent to Klipy when someone uses the GIF search feature.</li>
+          <li><strong>Twitch followage service:</strong> A requested Twitch username, configured streamer name, and configured moderator identifier are sent to <a href="https://commands.garretcharp.com/twitch/" rel="noreferrer">the followage service</a> to retrieve a result.</li>
+          <li><strong>Hosting and network providers:</strong> The bot is self-hosted. Providers used by the operator to run the host or connect to these services may process technical data as part of providing that infrastructure.</li>
+        </ul>
+        <p>These services have their own terms and privacy practices. FadesBot does not sell or license Discord API data to data brokers or advertising services.</p>
+      </section>
+
+      <section id="retention">
+        <p class="section-kicker">05 / Storage</p>
+        <h2>How long information is kept</h2>
+        <p>The bot stores persistent records in a SQLite database on the operator-managed host. Most database records do not have an automatic expiration in the current implementation. They remain until an authorized administrator or operator removes them, the relevant feature data is deleted, or a deletion request is handled.</p>
+        <ul>
+          <li>Authorized administrators can clear a user's infraction history with the bot's history-clearing feature. Other profile and media-audit records may require the operator to remove them from the database.</li>
+          <li>The in-memory deleted-message cache is limited to 10 entries per channel and is cleared when the bot restarts or entries are replaced.</li>
+          <li>Temporary media and video files are removed after processing completes.</li>
+          <li>Application log files rotate at 10 MB, keeping up to five backup files. Their age depends on how quickly logs rotate and on the host configuration.</li>
+          <li>If the repository's backup script is enabled and scheduled, it removes database backup files older than 14 days when it runs. Backup timing and storage security depend on the operator's host setup.</li>
+        </ul>
+        <p>Removing the bot from a server does not by itself delete database records or copies already posted in Discord. Contact the operator to request removal.</p>
+      </section>
+
+      <section id="choices">
+        <p class="section-kicker">06 / Requests</p>
+        <h2>Your choices and data requests</h2>
+        <p>Users can choose whether to use optional features such as profiles, GIF search, or Twitch lookups. There is no individual opt-out for message inspection while the bot is active and a server has enabled the relevant moderation features. A server owner can disable the bot or its features.</p>
+        <p>You can ask to access, correct, or delete information associated with you. Contact the FadesBot operator or the administrator of the server where the bot is installed. Include your Discord user ID, the server name or ID, and the type of record involved so the request can be located. Requests will be reviewed and handled under applicable law.</p>
+        <p><strong>Third-party media copies:</strong> The current Imgur upload integration stores the returned media link but does not retain Imgur's deletion token. The bot therefore cannot automatically delete an Imgur copy. Ask the operator about a specific archive; removal may also require contacting Imgur.</p>
+        <p>Some records, such as infraction history, can be cleared by authorized server staff. A user request should be sent to the operator if staff cannot resolve it.</p>
+      </section>
+
+      <section id="security">
+        <p class="section-kicker">07 / Safeguards</p>
+        <h2>Security</h2>
+        <p>The database and temporary files are kept on the operator-managed host. FadesBot does not add database-level encryption to its SQLite file. The operator is responsible for restricting host and database access and protecting stored data and backups, including using encryption at rest. No internet-connected system can be guaranteed completely secure.</p>
+      </section>
+
+      <section id="contact">
+        <p class="section-kicker">08 / Contact</p>
+        <h2>Questions or deletion requests</h2>
+        <div class="contact-line">
+          <p>Contact the FadesBot operator through <a href="https://discord.com/users/842568304979345428">their Discord profile</a>. If you cannot send a direct message, contact the server owner or administrator who manages the bot in your server and ask them to forward your request.</p>
+        </div>
+        <p style="margin-top: 18px">This policy may be updated when the bot's features, data practices, or applicable requirements change. The effective date above will be revised when material changes are made.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <p>FadesBot Privacy Policy</p>
+      <p>Effective October 16, 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
